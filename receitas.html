@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Receitas</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,24 +15,12 @@
                 <img src="assets/logo.png" class="logo">
             </a>
             <a href="sobre.html" class="link-text">Sobre</a>
-            <a href="/" class="link-text">Receitas</a>
+            <a href="/" class="link-text"><strong>Receitas</strong></a>
         </div>
     </header>
 
-    <div class="box-infos-home">
-        <div class="box-infos">
-            <p>As melhores receitas</p>
-            <p>Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.</p>
-        </div>
-        <div class="box-image">
-            <img src="assets/chef.png" alt="">
-        </div>
-    </div>
-    
-    <div class="mais-acessadas">
-        <p class='titulo'>Mais acessadas</p>
-        
-        <div class="cards-receitas">
+    <div class="receitas">
+       <div class="cards-receitas">
             <div class="card">
                 <img src="assets/burger.png" alt="">
                 <p class="nome-receita">Triplo bacon burger</p>
@@ -68,11 +56,60 @@
                 <p class="nome-receita">Asinhas de frango ao barbecue</p>
                 <p class="autor-receita">por Vania Steroski</p>
             </div>
+
+            <div class="card">
+                <img src="assets/burger.png" alt="">
+                <p class="nome-receita">Triplo bacon burger</p>
+                <p class="autor-receita">por Jorge Relato</p>
+            </div>
+
+            <div class="card">
+                <img src="assets/pizza.png" alt="">
+                <p class="nome-receita">Pizza 4 estações</p>
+                <p class="autor-receita">por Fabiana Melo</p>
+            </div>
+
+            <div class="card">
+                <img src="assets/espaguete.png" alt="">
+                <p class="nome-receita">Espaguete ao alho</p>
+                <p class="autor-receita">por Júlia Kinoto</p>
+            </div>
+
+            <div class="card">
+                <img src="assets/lasanha.png" alt="">
+                <p class="nome-receita">Lasanha mac n’ cheese</p>
+                <p class="autor-receita">por Juliano Vieira</p>
+            </div>
+
+            <div class="card">
+                <img src="assets/doce.png" alt="">
+                <p class="nome-receita">Docinhos pão-do-céu</p>
+                <p class="autor-receita">por Ricardo Golvea</p>
+            </div>
+
+            <div class="card">
+                <img src="assets/asinhas.png" alt="">
+                <p class="nome-receita">Asinhas de frango ao barbecue</p>
+                <p class="autor-receita">por Vania Steroski</p>
+            </div>
+        
         </div>
     </div>
 
-    <footer>
+    <footer class="footer-receitas">
         <p class="texto-footer">Todos direitos reservados, receitas Foodfy.</p>
     </footer>
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <img src="assets/burger.png" alt="">
+            <div class="texto-modal">
+                <p class="nome-receita">Triplo bacon burger</p>
+                <p class="autor-receita">por Jorge Relato</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
