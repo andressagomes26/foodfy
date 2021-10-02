@@ -1,5 +1,4 @@
-# Foodfy
-
+<h1 align="center">  Foodfy 🍽💕 </h1>
 
 <p align="center">
   <img width="957" height="479" src="https://user-images.githubusercontent.com/60404990/85141100-a11bbf00-b21c-11ea-82ad-4167e219282c.png">
