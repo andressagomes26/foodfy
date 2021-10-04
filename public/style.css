@@ -8,7 +8,7 @@
 :root{
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding:0px;
+    padding: 0px;
     border: 0px;
 }
 
@@ -113,6 +113,7 @@
 .card{
     cursor: pointer;
 }
+
 .cards-receitas{
     max-width: 366px;
     display: grid;
@@ -264,3 +265,22 @@ footer,
     opacity: 1;
 }    
     
+
+/* PAGE RECIPE */
+.recipe-image{
+    display: grid;
+    align-items: center;
+
+}
+.recipe-image img {
+    border-radius: 15px;
+    width: 64%;
+    height: 280px;
+    
+    margin: 0 auto;
+}
+
+.pageRecipe{
+    width: 64%;
+    margin: 0 auto;
+}

@@ -7,88 +7,24 @@
 {% block content %}
     <div class="receitas">
        <div class="cards-receitas">
-            <div class="card">
-                <img src="assets/burger.png" alt="">
-                <p class="nome-receita">Triplo bacon burger</p>
-                <p class="autor-receita">por Jorge Relato</p>
-            </div>
-
-            <div class="card">
-                <img src="assets/pizza.png" alt="">
-                <p class="nome-receita">Pizza 4 estações</p>
-                <p class="autor-receita">por Fabiana Melo</p>
-            </div>
-
-            <div class="card">
-                <img src="assets/espaguete.png" alt="">
-                <p class="nome-receita">Espaguete ao alho</p>
-                <p class="autor-receita">por Júlia Kinoto</p>
-            </div>
-
-            <div class="card">
-                <img src="assets/lasanha.png" alt="">
-                <p class="nome-receita">Lasanha mac n’ cheese</p>
-                <p class="autor-receita">por Juliano Vieira</p>
-            </div>
-
-            <div class="card">
-                <img src="assets/doce.png" alt="">
-                <p class="nome-receita">Docinhos pão-do-céu</p>
-                <p class="autor-receita">por Ricardo Golvea</p>
-            </div>
-
-            <div class="card">
-                <img src="assets/asinhas.png" alt="">
-                <p class="nome-receita">Asinhas de frango ao barbecue</p>
-                <p class="autor-receita">por Vania Steroski</p>
-            </div>
-
-            <div class="card">
-                <img src="assets/burger.png" alt="">
-                <p class="nome-receita">Triplo bacon burger</p>
-                <p class="autor-receita">por Jorge Relato</p>
-            </div>
-
-            <div class="card">
-                <img src="assets/pizza.png" alt="">
-                <p class="nome-receita">Pizza 4 estações</p>
-                <p class="autor-receita">por Fabiana Melo</p>
-            </div>
-
-            <div class="card">
-                <img src="assets/espaguete.png" alt="">
-                <p class="nome-receita">Espaguete ao alho</p>
-                <p class="autor-receita">por Júlia Kinoto</p>
-            </div>
-
-            <div class="card">
-                <img src="assets/lasanha.png" alt="">
-                <p class="nome-receita">Lasanha mac n’ cheese</p>
-                <p class="autor-receita">por Juliano Vieira</p>
-            </div>
-
-            <div class="card">
-                <img src="assets/doce.png" alt="">
-                <p class="nome-receita">Docinhos pão-do-céu</p>
-                <p class="autor-receita">por Ricardo Golvea</p>
-            </div>
-
-            <div class="card">
-                <img src="assets/asinhas.png" alt="">
-                <p class="nome-receita">Asinhas de frango ao barbecue</p>
-                <p class="autor-receita">por Vania Steroski</p>
-            </div>
+           {% for receita in receitas %}
+                <div class="card" id="{{receita.id}}">
+                    <img src="{{receita.image}}" alt="Imagem de {{receita.title}}">
+                    <p class="nome-receita">{{receita.title}}</p>
+                    <p class="autor-receita">{{receita.author}}</p>
+                </div>
+            {% endfor %}
         
         </div>
     </div>
 {% endblock %}
 
 {% block footer%}
-    <footer class="footer-receitas">
+    <footer>
         <p class="texto-footer">Todos direitos reservados, receitas Foodfy.</p>
     </footer>
 
-    <div class="modal-overlay">
+    <!--div class="modal-overlay">
         <div class="modal">
             <img src="" alt="">
             <div class="texto-modal">
@@ -97,7 +33,7 @@
                 <p class="fechar-modal">Fechar modal</p>
             </div>
         </div>
-    </div>
+    </div-->
 
     <script src="script.js"></script>
 {% endblock %}
