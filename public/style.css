@@ -272,6 +272,7 @@ footer,
     align-items: center;
 
 }
+
 .recipe-image img {
     border-radius: 15px;
     width: 64%;
@@ -283,4 +284,47 @@ footer,
 .pageRecipe{
     width: 64%;
     margin: 0 auto;
+}
+
+.recipe-infos{
+    text-align: center;
+    margin: 50px 0;
+}
+
+
+.recipe-infos .recipe-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: #111111;
+    margin-bottom: 4px;
+}
+
+.recipe-infos .recipe-author {
+    font-family: 'Roboto-Regular';
+    font-size: 20px;
+    color: #777777;
+    line-height: 24px;
+    color: #777777;
+}
+
+.title-ingredientes,
+.title-preparation,
+.title-information{
+    font-family: 'Roboto-Bold';
+    font-weight: bold;
+    font-size: 24px;
+    color: #111111;
+    line-height: 28px;
+
+    margin: 20px 0;
+}
+
+.ingredientsItem,
+.preparationItem,
+.informationItem{
+    font-family: 'Roboto-Regular';
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
 }

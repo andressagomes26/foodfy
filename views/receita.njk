@@ -10,15 +10,15 @@
     </div>
     <div class="pageRecipe">
         <div class="recipe-infos">
-            <p clas="recipe-title">{{item.title}}</p>
-            <p clas="recipe-author">{{item.author}}</p>
+            <p class="recipe-title">{{item.title}}</p>
+            <p class="recipe-author">{{item.author}}</p>
         </div>
 
         <div class="recipe-ingredients">
             <p class="title-ingredientes">Ingredientes</p>
             <ul class="ingredients">
                 {% for ingredient in item.ingredients %}
-                    <li>{{ingredient}}</li>
+                    <li class="ingredientsItem">{{ingredient}}</li>
                 {% endfor %}
             </ul>
         </div>
@@ -26,13 +26,13 @@
         <div class="recipe-preparation">
             <p class="title-preparation">Modo de Preparo</p>
             {% for preparationItem in item.preparation %}
-                <p>{{preparationItem}}</p>
+                <p class="preparationItem">{{preparationItem}}</p>
             {% endfor %}
         </div>
 
         <div class="recipe-information">
-            <p class="title-preparation">Informações adicionais</p>
-            <p>{{item.information}}
+            <p class="title-information">Informações adicionais</p>
+            <p class="informationItem">{{item.information}}</p>
         </div>
     </div>
 {% endblock %}
