@@ -15,22 +15,22 @@ nunjucks.configure("views", {
 
 // ROTAS 
 server.get("/", function(req, res){
-    return res.render('home', {receitas: data})
+    return res.render('home', {recipes: data})
 })
 
 server.get("/sobre", function(req, res){
     return res.render('sobre')
 })
 
-server.get("/receitas", function(req, res){
-    return res.render('receitas', {receitas: data})
+server.get("/recipes", function(req, res){
+    return res.render('recipes', {recipes: data})
 })
 
-server.get("/receita/:index", function (req, res) {
+server.get("/recipe/:index", function (req, res) {
   const recipes = data; // Array de receitas carregadas do data.js
   const recipeIndex = req.params.index;
 
-  return res.render("receita", {item: recipes[recipeIndex]})
+  return res.render("recipe", {item: recipes[recipeIndex]})
 })
 
 server.listen(5000, function(){

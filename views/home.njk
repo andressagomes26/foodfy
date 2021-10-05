@@ -15,15 +15,15 @@
         </div>
     </div>
     
-    <div class="mais-acessadas">
+    <div class="recipes-home">
         <p class='titulo'>Receitas</p>
         
-        <div class="cards-receitas">
-            {% for receita in receitas %}
+        <div class="cards-recipes">
+            {% for recipe in recipes %}
             <div class="card">
-                <img src="{{receita.image}}" alt="">
-                <p class="nome-receita">{{receita.title}}</p>
-                <p class="autor-receita">{{receita.author}}</p>
+                <img src="{{recipe.image}}" alt="Imagem de {{recipe.title}}">
+                <p class="name-recipe">{{recipe.title}}</p>
+                <p class="author-recipe">{{recipe.author}}</p>
             </div>
             {% endfor %}
         </div>
@@ -32,6 +32,6 @@
 
 {% block footer %}
     <footer>
-        <p class="texto-footer">Todos direitos reservados, receitas Foodfy.</p>
+        <p class="text-footer">Todos direitos reservados, receitas Foodfy.</p>
     </footer>
 {% endblock %}

@@ -15,7 +15,8 @@
         </div>
 
         <div class="recipe-ingredients">
-            <p class="title-ingredientes">Ingredientes</p>
+                <p class="title-ingredients">Ingredientes</p> 
+                <p class="buttoningredients">ESCONDER</p>
             <ul class="ingredients">
                 {% for ingredient in item.ingredients %}
                     <li class="ingredientsItem">{{ingredient}}</li>
@@ -25,20 +26,28 @@
 
         <div class="recipe-preparation">
             <p class="title-preparation">Modo de Preparo</p>
-            {% for preparationItem in item.preparation %}
-                <p class="preparationItem">{{preparationItem}}</p>
-            {% endfor %}
+            <p class="buttonPreparation">ESCONDER</p>
+            <div class="preparation">
+                {% for preparationItem in item.preparation %}
+                    <p class="preparationItem">{{preparationItem}}</p>
+                {% endfor %}
+            </div>
         </div>
 
         <div class="recipe-information">
             <p class="title-information">Informações adicionais</p>
-            <p class="informationItem">{{item.information}}</p>
+            <p class="buttonInformation">ESCONDER</p>
+            <div class="information">
+                <p class="informationItem">{{item.information}}</p>
+            </div>
         </div>
     </div>
 {% endblock %}
 
 {% block footer %}
     <footer>
-        <p class="texto-footer">Todos direitos reservados, receitas Foodfy.</p>
+        <p class="text-footer">Todos direitos reservados, receitas Foodfy.</p>
     </footer>
+
+    <script src="/script.js"></script>
 {% endblock %}
